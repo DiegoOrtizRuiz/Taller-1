@@ -30,6 +30,6 @@ document.addEventListener('click', function (event) {
         var cardTitle = document.querySelector('#cardTitle');
         var cardText = document.querySelector('#cardText');
         cardTitle.textContent = selectedSerie.name;
-        cardText.innerHTML = "\n      <p>Name: ".concat(selectedSerie.name, "</p>\n      <p>Review: ").concat(selectedSerie.review, "</p>\n      <p>URL: ").concat(selectedSerie.url, "</p>\n      <img class=\"serie-image\" src=\"").concat(selectedSerie.image, "\" alt=\"").concat(selectedSerie.name, " image\">\n\n    ");
+        cardText.innerHTML = "\n      <p>".concat(selectedSerie.review, "</p>\n      <p><a href=\"").concat(selectedSerie.url, "\" target=\"_blank\">").concat(selectedSerie.url, "</a></p>\n      <img class=\"serie-image\" src=\"").concat(selectedSerie.image, "\" alt=\"").concat(selectedSerie.name, " image\">\n    ");
     }
 });

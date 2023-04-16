@@ -46,14 +46,13 @@ document.addEventListener('click', (event: MouseEvent): void => {
     const cardText = document.querySelector('#cardText') as HTMLElement;
     cardTitle.textContent = selectedSerie.name;
     cardText.innerHTML = `
-      <p>Name: ${selectedSerie.name}</p>
-      <p>Review: ${selectedSerie.review}</p>
-      <p>URL: ${selectedSerie.url}</p>
+      <p>${selectedSerie.review}</p>
+      <p><a href="${selectedSerie.url}" target="_blank">${selectedSerie.url}</a></p>
       <img class="serie-image" src="${selectedSerie.image}" alt="${selectedSerie.name} image">
-
     `;
   }
 });
+
 
 
 
