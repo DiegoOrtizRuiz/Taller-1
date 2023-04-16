@@ -10,33 +10,39 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-2">
+            <div class="col-md-2">
                 <img src="https://www.cuentasysesiones.com/images/cuevana_series_gratis_para_android/34706_1200x1200.jpg" style="width: 175px">
             </div>
-            <div class="col">
+            <div class="col-md">
                 <h2>TV Series</h2>
-                <table class="table">
-                    <thead class="thead-dark">
-                       <tr>
-                          <th>id</th>
-                          <th>Name</th>
-                          <th>Channel</th>
-                          <th>Seasons</th>
-                       </tr>
-                    </thead>
-                    <tbody id="series">
-                    </tbody>
-                </table>
-                <div class="card">
-                    <div class="card-header">
-                      <h5 id="cardTitle" class="card-title"></h5>
+                <div class="row">
+                    <div class="col-md-8">
+                        <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>id</th>
+                                    <th>Name</th>
+                                    <th>Channel</th>
+                                    <th>Seasons</th>
+                                </tr>
+                            </thead>
+                            <tbody id="series">
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="card-body">
-                      <div id="cardText" class="card-text"></div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 id="cardTitle" class="card-title"></h5>
+                            </div>
+                            <div class="card-body">
+                                <div id="cardText" class="card-text"></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <p>Number of seasons average: <a id="average-seasons"></a></p>
+                        </div>
                     </div>
-                  </div>                  
-                <div class="col">
-                    <p>Number of seasons average: <a id="average-seasons"></a></p>
                 </div>
             </div>
         </div>
