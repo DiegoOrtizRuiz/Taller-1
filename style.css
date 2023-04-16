@@ -21,4 +21,7 @@ table {
     color: #000000;
   }
 
- 
+  .serie-image {
+    width: 500;
+    height: auto;
+  }
